@@ -1,59 +1,70 @@
 
 html {
-    background-repeat: no-repeat;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    min-width: 100%;
+    background-color:black;
+    margin: 0;
+    padding: 0;
 }
 .intro {
     color:white;
     grid-column: 2 / span 7; 
-    grid-row: 2;
+    grid-row: 3 / span 3;
     font-size: 30px;
 }
 
 body {
+    min-width: 100%;
+    min-height:100%;
     z-index: 4;
     display:grid;
    color: #c7ad8a;
 }
+.menu {
+    margin: auto; 
 
+}
+.menu button {
+    display: inline-block; 
+    width: 300px; 
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px; 
+    background-color: black; 
+    color: white; 
+    border: none; 
+    padding: 20px;
+    
+}
+
+.menu button:hover{
+    background-color: #313131;
+}
 .header {
 }
 head {
+    position: relative; 
     display:grid;
-    color:aqua;
 }
 .grid {
-    
-    width:100%; 
-    height: 100%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%; 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
     display:grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 
 }
 
-ul {
-    font-weight: bold;
-    list-style: none;
-
 }
-li:hover{
-       color: #e2c59e;
-
-}
-
-.button:hover {
-}
-.button {
-    background-color: beige;
-    align-items: center;
-    grid-row-end:1;
-    height: 60px;
-    width:100%;
-    position: fixed;
 }
 #a {
-    grid-column: 4;
+    grid-column:4;
 }
 
 #b{
@@ -66,14 +77,25 @@ li:hover{
     grid-column:7;
 }
 
-.bg-img {
-    margin:auto;
-    display:grid;
-    position:absolute;
+#bg-img {
+    position: absolute;
+    grid-row-start: 1 / span 3;
+    grid-column: 0 / 10;
     z-index: -1;
-    background-image: url("https://images5.alphacoders.com/900/thumb-1920-900365.jpg"); 
-    height:1080px; 
-    width: 1266px;
+    background-image: url("https://lh3.googleusercontent.com/7ovuZPCBF8OCae-6RqzLqDhOImoPb7LapMq_eJrWx1WSRF0Uf0XztSQt_nZuSMT7H9BYaf3E9Bk01VfrdQrUmJAxxmaScXhF2FhbrRknDjBsQPIUqSIXo8vQLiKKSYnE_pp8NCnwdgx8Gr8S_r5ET46Nl_fBOIU6NmbHorfRMo3DKyO_HMS93f0CVxBVCO2ka0ZfhTuF1h4r3qd6hQv7tWRO1uVQLD3su4_dyVGehRqBYm9lIR0NCKkXchPauxuqaDMGOWvYPVnALpIeBVcW2vUZTKv3-MRS6TjO_7TnidW6lZDFygjAtWNWombtcjTPmWzYLjWfwc269MwqOfee7a3nQ7xAyB5S03V8i1dx7olh9YiXOcenoBFKvTHmOi24h9TE7WrNQEkMyrj-TFyB15p_j1jTHJznXRpZ-wWKXp4p0Hkd0ZbXndjsDdupOPwB5T_2DJ4b8BSz6TDEQe2KKONrD_oyWK5ovZx_CNWGNPWOlJZLu2YtkNRUBSNosQRsUx9tj8QEjZHB4LQFiIkZpHvuBx6n_uuIQs1YxGFrJI3gUiNE9JsNKPLBDewApbwj7eT2d3Yozvv5lvBC4HS0AYYPLAOsB1pno2XWe6ry5RnNzsARBKCd4_u0fjiYg7FE=w1320-h695-no"); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat ;
+    max-height: 1320px; 
+    max-width: 690px;
   
 
+}
+
+button.top {
+    background: transparent; 
+    border: 4 px; 
+    border-color: white; 
+    color: white; 
+    border-radius: 10px;
 }
