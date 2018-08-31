@@ -24,7 +24,11 @@ body {
     margin: auto; 
 
 }
+
+button:focus {
+}
 .menu button {
+    outline: none;
     display: inline-block; 
     width: 300px; 
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -53,11 +57,9 @@ head {
     margin: 0;
     padding: 0;
     position: relative;
-    min-width: 100vw;
-    min-height: 100vh;
     display:grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(22, 1fr);
 
 }
 
@@ -86,16 +88,24 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 1320px; 
-    max-width: 690px;
+    max-height: 45%; 
+    max-width: 100%;
   
 
 }
+#buttonTop:hover{
+    color:#c9c9c9;
 
-button.top {
-    background: transparent; 
-    border: 4 px; 
-    border-color: white; 
+}
+#buttonTop {
+    right:1%;
+    z-index:10;
+    position:fixed;
+    top: 95%;
+    text-align: center; 
+    font-size: 30px;
+    font-family:  'M PLUS Rounded 1c', sans-serif;
     color: white; 
-    border-radius: 10px;
+    background: transparent; 
+   
 }
