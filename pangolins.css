@@ -7,18 +7,29 @@ html {
     padding: 0;
 }
 .intro {
-    color:white;
     grid-column: 2 / span 7; 
-    grid-row: 3 / span 3;
+    grid-row:  4;
+    font-size: 30px;
+    height: 55%;
+}
+
+
+p {
+    color: white;
+}
+.about {
+    grid-column: 2 / span 7;
+    grid-row: 17;
     font-size: 30px;
 }
 
 body {
+    overflow-x:hidden;
     min-width: 100%;
     min-height:100%;
     z-index: 4;
     display:grid;
-   color: #c7ad8a;
+   color: white;
 }
 .menu {
     margin: auto; 
@@ -59,7 +70,7 @@ head {
     position: relative;
     display:grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(22, 1fr);
+    grid-template-rows: repeat(30, 100px);
 
 }
 
@@ -81,14 +92,25 @@ head {
 
 #bg-img {
     position: absolute;
-    grid-row-start: 1 / span 3;
-    grid-column: 0 / 10;
     z-index: -1;
-    background-image: url("https://lh3.googleusercontent.com/7ovuZPCBF8OCae-6RqzLqDhOImoPb7LapMq_eJrWx1WSRF0Uf0XztSQt_nZuSMT7H9BYaf3E9Bk01VfrdQrUmJAxxmaScXhF2FhbrRknDjBsQPIUqSIXo8vQLiKKSYnE_pp8NCnwdgx8Gr8S_r5ET46Nl_fBOIU6NmbHorfRMo3DKyO_HMS93f0CVxBVCO2ka0ZfhTuF1h4r3qd6hQv7tWRO1uVQLD3su4_dyVGehRqBYm9lIR0NCKkXchPauxuqaDMGOWvYPVnALpIeBVcW2vUZTKv3-MRS6TjO_7TnidW6lZDFygjAtWNWombtcjTPmWzYLjWfwc269MwqOfee7a3nQ7xAyB5S03V8i1dx7olh9YiXOcenoBFKvTHmOi24h9TE7WrNQEkMyrj-TFyB15p_j1jTHJznXRpZ-wWKXp4p0Hkd0ZbXndjsDdupOPwB5T_2DJ4b8BSz6TDEQe2KKONrD_oyWK5ovZx_CNWGNPWOlJZLu2YtkNRUBSNosQRsUx9tj8QEjZHB4LQFiIkZpHvuBx6n_uuIQs1YxGFrJI3gUiNE9JsNKPLBDewApbwj7eT2d3Yozvv5lvBC4HS0AYYPLAOsB1pno2XWe6ry5RnNzsARBKCd4_u0fjiYg7FE=w1320-h695-no"); 
+    background-image: url("https://github.com/loriencho/pangolins/blob/master/pangolin-background.png?raw=true"); 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 45%; 
+    max-height: 28%; 
+    max-width: 100%;
+  
+
+}
+#bg-img2 {
+    position: absolute;
+    z-index: -1;
+    background-image: url("https://github.com/loriencho/pangolins/blob/27f5e613840409f190ebc0c7e460cdbd8171538d/second%20background.png?raw=true"); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat ;
+    max-height: 30%; 
+    top: 45%; 
     max-width: 100%;
   
 
@@ -98,8 +120,11 @@ head {
 
 }
 #buttonTop {
+    transition: color 1s;
+    cursor: pointer;
     right:1%;
     z-index:10;
+    display: none;
     position:fixed;
     top: 95%;
     text-align: center; 
@@ -108,4 +133,8 @@ head {
     color: white; 
     background: transparent; 
    
+    
+}
+ html {
+    scroll-behavior: smooth; 
 }
