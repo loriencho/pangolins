@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html >
-<head > 
+<head   > 
         
     <title> Pangolins </title>
     <link rel="shortcut icon"
@@ -25,10 +25,12 @@
          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
 
                 document.getElementById("buttonTop").style.display = "block";
+
             }
         else { 
                 document.getElementById("buttonTop").style.display = "none" ;
-                ;}
+;
+                }
         
         }
             
@@ -36,9 +38,37 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-        function fadeOut() {
-            if (document.getElementsByClassName)
+        function fadeIntro() {
+            document.getElementById('intro').style.transition ="opacity .5s" ;
+
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+             document.getElementById('intro').style.opacity ="0" ;
+
+                
+            }
+            else {             
+                document.getElementById('intro').style.opacity ="1" ;
+
+            }
+       
+             
+            
         }
+         function fadeAbout () {
+                document.getElementById('about').style.transition ="opacity .5s" ;
+
+            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+             document.getElementById('about').style.opacity ="1" ;
+
+                
+            }
+            else  {             
+                document.getElementById('about').style.opacity = "0" ;
+
+            }
+       
+                   }
+          
 
 </script>
 
@@ -46,11 +76,10 @@
     </head> 
     
     
-<body onscroll = "showButton()"}
- > 
+<body onscroll = "showButton() ; fadeIntro() ; fadeAbout()"> 
     
     <div class= "grid">
-        <div class= "intro">
+        <div id= "intro">
        
             <h3> The Pangolin </h3>
     <p >
@@ -61,7 +90,7 @@
         </div>
         <div id= "bg-img" class="grid"></div>
            
-        <div class = "about">
+        <div id = "about">
             <h3> About </h3>
             <p> 
                 The pangolin, sometimes called the "scaly anteater," is an animal only the size of an average housecat! There are eight different pangolin species: four that live in Africa, and another four that live in Asia. According to the International Union for the Conservation of Nature (IUCN), there's almost no information available on population levels of any species of pangolin, but they are all thought to be in decline. 
@@ -74,7 +103,7 @@
     </div>
     
      
-    <div id = "buttonTop" title = "Back to top" onclick = "toTop()"> ▲ </div>
+    <div id = "buttonTop" title = "Back to top" onclick = "toTop()"> </div>
 
     </body>
 
