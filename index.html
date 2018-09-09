@@ -11,7 +11,7 @@
 
     <div class= " menu"> 
         
-        <button id="a"> ABOUT </button>
+        <button id="a" onlclick = "scrollAbout()"> ABOUT </button>
         <button id= "b"> POACHING</button>
         <button id= "c"> BEHAVIOR</button>
         <button id= "d"> DIET</button>
@@ -20,15 +20,18 @@
     
     <script>
      
-
+        
         function showButton () {
-         if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            var buttonTop = document.getElementById("buttonTop");
+            var bodyScrollTop = document.body.scrollTop;
+            var elementScrollTop = document.documentElement.scrollTop; 
+         if (bodyScrollTop > 300 || elementScrollTop > 300) {
 
-                document.getElementById("buttonTop").style.display = "block";
+                buttonTop.style.display = "block";
 
             }
         else { 
-                document.getElementById("buttonTop").style.display = "none" ;
+                buttonTop.style.display = "none" ;
 ;
                 }
         
@@ -39,35 +42,67 @@
             document.documentElement.scrollTop = 0;
         }
         function fadeIntro() {
-            document.getElementById('intro').style.transition ="opacity .5s" ;
+            var bgimg = document.getElementById("bgimg");
+            var intro = document.getElementById('intro');
+            intro.style.transition ="opacity .5s" ;
+            bgimg.style.transition = "opacity .5s";
 
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-             document.getElementById('intro').style.opacity ="0" ;
+             intro.style.opacity ="0" ;
+             bgimg.style.opacity =".7" ;
 
                 
             }
             else {             
-                document.getElementById('intro').style.opacity ="1" ;
+                intro.style.opacity ="1" ;
+                bgimg.style.opacity = ".6";
 
             }
        
              
             
         }
+        
          function fadeAbout () {
-                document.getElementById('about').style.transition ="opacity .5s" ;
+             
+            var about = document.getElementById('about');
+            var bScrollTop = document.body.scrollTop;
+            var deScrollTop = document.documentElement.scrollTop;
+            var bgimg2 = document.getElementById('bgimg2');
 
-            if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-             document.getElementById('about').style.opacity ="1" ;
+                about.style.transition ="opacity .5s" ;
+                bgimg2.style.transition = "opacity .5s";
 
+            if (1000 < bScrollTop || 1000 < deScrollTop) {
                 
+                if (  deScrollTop > 1600 || bScrollTop> 1600) {    
+                    bgimg2.style.opacity = ".7";
+                    about.style.opacity = "0" ;
+    
             }
-            else  {             
-                document.getElementById('about').style.opacity = "0" ;
+                else {
+                        about.style.opacity ="1" ; 
+                        bgimg2.style.opacity = ".6";
 
+
+
+                }
             }
+                else {
+                    bgimg2.style.opacity = ".7";
+
+                    about.style.opacity ="0" ; 
+
+
+                }    
+            
+            
        
                    }
+        function scrollAbout(){
+            document.body.scrollTop = 2000;
+            document.documentElement.scrollTop = 2000;
+        }
           
 
 </script>
@@ -88,16 +123,16 @@
             
             </p>
         </div>
-        <div id= "bg-img" class="grid"></div>
+        <div id= "bgimg" class="grid"></div>
            
         <div id = "about">
             <h3> About </h3>
             <p> 
-                The pangolin, sometimes called the "scaly anteater," is an animal only the size of an average housecat! There are eight different pangolin species: four that live in Africa, and another four that live in Asia. According to the International Union for the Conservation of Nature (IUCN), there's almost no information available on population levels of any species of pangolin, but they are all thought to be in decline. 
+                The pangolin, sometimes called the "scaly anteater," is an animal only the size of an average housecat! According to the International Union for the Conservation of Nature (IUCN), there's almost no information available on population levels of any species of pangolin, but they are all thought to be in decline. 
             </p>
         </div>
         
-        <div id = "bg-img2" class = "grid"> </div>
+        <div id = "bgimg2" class = "grid"> </div>
 
 
     </div>

@@ -33,13 +33,13 @@ body {
    color: white;
 }
 .menu {
-    margin: auto; 
+    justify-content: center; 
+    margin: auto;
 
 }
 
-button:focus {
-}
 .menu button {
+    transition: letter-spacing .1s; 
     outline: none;
     display: inline-block; 
     width: 300px; 
@@ -52,7 +52,8 @@ button:focus {
     
 }
 
-.menu button:hover{
+.menu button:hover {
+    letter-spacing: 3px; 
     background-color: #313131;
 }
 .header {
@@ -91,10 +92,12 @@ head {
     grid-column:7;
 }
 
-#bg-img {
+#bgimg {
+    opacity: .6;
     position: absolute;
     z-index: -1;
-    background-image: url("https://github.com/loriencho/pangolins/blob/master/pangolin-background.png?raw=true"); 
+    background-image: url("https://github.com/loriencho/pangolins/blob/master/firstbg.jpg?raw=true"); 
+    background-image: url("https://github.com/loriencho/pangolins/blob/master/firstbg.jpg?raw=true"); 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
@@ -103,10 +106,10 @@ head {
   
 
 }
-#bg-img2 {
+#bgimg2 {
     position: absolute;
     z-index: -1;
-    background-image: url("https://github.com/loriencho/pangolins/blob/27f5e613840409f190ebc0c7e460cdbd8171538d/second%20background.png?raw=true"); 
+    background-image: url("https://raw.githubusercontent.com/loriencho/pangolins/06a96438486dbbddfceff3b96def7525e701352f/baby-pangolin-Christian-Boix.jpg "); 
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
