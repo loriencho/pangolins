@@ -34,7 +34,9 @@ body {
 }
 .menu {
     justify-content: center; 
-    margin: auto;
+    height: 20%; 
+
+
 
 }
 
@@ -42,19 +44,24 @@ body {
     transition: letter-spacing .1s; 
     outline: none;
     display: inline-block; 
-    width: 300px; 
+    width: 17.4%; 
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 20px; 
     background-color: black; 
     color: white; 
     border: none; 
     padding: 20px;
+
     
+}
+
+#a {
+    margin-left: 15%;
 }
 
 .menu button:hover {
     letter-spacing: 3px; 
-    background-color: #313131;
+    background-color: #272727;
 }
 .header {
 }
@@ -76,24 +83,12 @@ head {
 
 }
 
-}
-}
-#a {
-    grid-column:4;
-}
 
-#b{
-    grid-column:5;
-}
-#c{
-    grid-column:6;
-}
-#d{
-    grid-column:7;
-}
+
 
 #bgimg {
     opacity: .6;
+
     position: absolute;
     z-index: -1;
     background-image: url("https://github.com/loriencho/pangolins/blob/master/firstbg.jpg?raw=true"); 
@@ -105,6 +100,12 @@ head {
     max-width: 100%;
   
 
+}
+
+ #bgimg:hover, {
+    
+    transform: scale(3)
+    
 }
 #bgimg2 {
     position: absolute;
@@ -119,7 +120,7 @@ head {
   
 
 }
-#buttonTop:hover{
+backgroumd-image:hover{
     opacity: 1; 
     top: 94.8%; 
 }
