@@ -45,7 +45,7 @@
             var bgimg = document.getElementById("bgimg");
             var intro = document.getElementById('intro');
             intro.style.transition ="opacity .5s" ;
-            bgimg.style.transition = "opacity .5s";
+            bgimg.style.transition = "opacity .8s";
 
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
              intro.style.opacity ="0" ;
@@ -71,26 +71,26 @@
             var bgimg2 = document.getElementById('bgimg2');
 
                 about.style.transition ="opacity .5s" ;
-                bgimg2.style.transition = "opacity .5s";
+                bgimg2.style.transition = "opacity .8s";
 
-            if (1000 < bScrollTop || 1000 < deScrollTop) {
+            if (800 < bScrollTop || 800 < deScrollTop) {
                 
                 if (  deScrollTop > 1600 || bScrollTop> 1600) {    
-                    bgimg2.style.opacity = ".7";
+                    bgimg2.style.opacity = ".6";
                     about.style.opacity = "0" ;
                     
     
             }
                 else {
                         about.style.opacity ="1" ; 
-                        bgimg2.style.opacity = ".6";
+                        bgimg2.style.opacity = ".5";
 
 
 
                 }
             }
                 else {
-                    bgimg2.style.opacity = ".7";
+                    bgimg2.style.opacity = ".6";
 
                     about.style.opacity ="0" ; 
 
@@ -100,10 +100,47 @@
             
        
                    }
-        function scrollAbout(){
+    function scrollAbout(){
             document.body.scrollTop = 2000;
             document.documentElement.scrollTop = 2000;
         }
+   function fadePoaching () {
+             
+            var poaching = document.getElementById('poaching');
+            var bScrollTop = document.body.scrollTop;
+            var deScrollTop = document.documentElement.scrollTop;
+            var bgimg3 = document.getElementById('bgimg3');
+
+                poaching.style.transition ="opacity .5s" ;
+                bgimg3.style.transition = "opacity .8s";
+
+            if (1900 < bScrollTop || 1900 < deScrollTop) {
+                if (  deScrollTop > 2500 || bScrollTop> 2400) {   
+                    console.log("yo");
+
+                    bgimg3.style.opacity = ".6";
+                    about.style.opacity = "0" ;
+                    
+    
+            }
+                else {
+                        poaching.style.opacity ="1" ; 
+                        bgimg3.style.opacity = ".5";
+
+
+
+                }
+            }
+                else {
+                    bgimg3.style.opacity = ".6";
+
+                    poaching.style.opacity ="0" ; 
+
+
+                }    
+   }
+            
+            
           
 
 </script>
@@ -112,7 +149,7 @@
     </head> 
     
     
-<body onscroll = "showButton() ; fadeIntro() ; fadeAbout()"> 
+<body onscroll = "showButton() ; fadeIntro() ; fadeAbout(); fadePoaching()"> 
     
     <div class= "grid">
         <div id= "intro">
@@ -134,13 +171,15 @@
         </div>
         
         <div id = "bgimg2" class = "grid"> </div>
-        <div id = "poaching" class="grid">
+        <div id = "poaching">
         
         <h3> Poaching</h3>
             <p> 
                 The pangolin is mostly trafficked in Asia (mainly in China and Vietnam), but its trafficking is increasing in Africa. Their meat, which is considered a delicacy, and scales, which are used in traditional medicine, leads to its high demand. 
             </p>
         </div>
+        <div id= "bgimg3" class= "grid"> 
+</div>
 
 
     </div>

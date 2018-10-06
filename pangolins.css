@@ -8,20 +8,24 @@ html {
 }
 #intro {
     grid-column: 2 / span 7; 
-    grid-row:  4;
-    font-size: 30px;
+    grid-row:  2;
+    font-size: 2em;
     height: 55%;}
-    transition: opacity 4s; 
 
 
 p {
     color: white;
 }
 #about {
-    grid-column: 2 / span 7;
-    grid-row: 16;
-    opacity: transparent; 
-    font-size: 30px;
+    grid-column: 2 / span 8;
+    grid-row: 14;
+    font-size: 2vw;
+}
+#poaching {
+    grid-column: 2 / span 8;
+    grid-row: 25;
+    font-size: 2em;
+    
 }
 
 body {
@@ -46,7 +50,7 @@ body {
     display: inline-block; 
     width: 17.4%; 
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 20px; 
+    font-size: 1.3em; 
     background-color: black; 
     color: white; 
     border: none; 
@@ -79,7 +83,7 @@ head {
     position: relative;
     display:grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(30, 100px);
+    grid-template-rows: repeat(70, 100px);
 
 }
 
@@ -96,7 +100,7 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 28%; 
+    max-height: 12%; 
     max-width: 100%;
   
 
@@ -114,11 +118,24 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 30%; 
-    top: 45%; 
+    max-height: 12%; 
+    top: 16%; 
     max-width: 100%;
   
 
+}
+
+#bgimg3{
+    opacity: .6;
+    position: absolute;
+    z-index: -1;
+    background-image: url(" https://github.com/loriencho/pangolins/blob/master/pangolin%203rd%20background.jpg?raw=true"); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat ;
+    max-height: 12%; 
+    top: 32%; 
+    max-width: 100%;
 }
 backgroumd-image:hover{
     opacity: 1; 
