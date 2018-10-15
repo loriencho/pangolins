@@ -33,11 +33,12 @@ p {
     grid-row: 36;
     font-size: 2vw;
 }
-#poaching {
+#diet {
     grid-column: 2 /span 8;
-    grid-row: 45;
+    grid-row: 47;
     font-size: 2vw;
 }
+
 body {
     overflow-x:hidden;
     min-width: 100%;
@@ -93,7 +94,7 @@ head {
     position: relative;
     display:grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(70, 100px);
+    grid-template-rows: repeat(40, 100px);
 
 }
 
@@ -110,17 +111,13 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 12%; 
+    max-height: 19%; 
     max-width: 100%;
   
 
 }
 
- #bgimg:hover, {
-    
-    transform: scale(3)
-    
-}
+
 #bgimg2 {
     position: absolute;
     z-index: -1;
@@ -128,8 +125,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 12%; 
-    top: 16%; 
+    max-height: 19%; 
+    top: 25%; 
     max-width: 100%;
   
 
@@ -142,8 +139,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 12%; 
-    top: 32%; 
+    max-height: 19%; 
+    top: 50%; 
     max-width: 100%;
 }
 
@@ -154,8 +151,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 12%; 
-    top: 48%; 
+    max-height: 19%; 
+    top: 75%; 
     max-width: 100%;
 }
 
@@ -165,8 +162,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 12%; 
-    top: 64%; 
+    max-height: 19%; 
+    top: 100%; 
     max-width: 100%;
      position: absolute;
     z-index: -1;
