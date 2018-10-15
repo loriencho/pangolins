@@ -9,7 +9,7 @@ html {
 #intro {
     grid-column: 2 / span 7; 
     grid-row:  2;
-    font-size: 2em;
+    font-size: 2vw;
     height: 55%;}
 
 
@@ -24,10 +24,20 @@ p {
 #poaching {
     grid-column: 2 / span 8;
     grid-row: 25;
-    font-size: 2em;
+    font-size: 2vw;
     
 }
 
+#behavior {
+    grid-column: 2 /span 8;
+    grid-row: 36;
+    font-size: 2vw;
+}
+#poaching {
+    grid-column: 2 /span 8;
+    grid-row: 45;
+    font-size: 2vw;
+}
 body {
     overflow-x:hidden;
     min-width: 100%;
@@ -126,7 +136,6 @@ head {
 }
 
 #bgimg3{
-    opacity: .6;
     position: absolute;
     z-index: -1;
     background-image: url(" https://github.com/loriencho/pangolins/blob/master/pangolin%203rd%20background.jpg?raw=true"); 
@@ -137,10 +146,32 @@ head {
     top: 32%; 
     max-width: 100%;
 }
-backgroumd-image:hover{
-    opacity: 1; 
-    top: 94.8%; 
+
+#bgimg4{
+    position: absolute;
+    z-index: -1;
+    background-image: url("https://github.com/loriencho/pangolins/blob/master/pangolin4.png?raw=true"); 
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat ;
+    max-height: 12%; 
+    top: 48%; 
+    max-width: 100%;
 }
+
+
+#bgimg5{
+    background-image: url("https://github.com/loriencho/pangolins/blob/d8db1d9a250f7f08215ef108e04eced0ac5d601a/pangolin5.jpg?raw=true");
+    background-attachment: fixed; 
+    background-size: cover;
+    background-repeat: no-repeat ;
+    max-height: 12%; 
+    top: 64%; 
+    max-width: 100%;
+     position: absolute;
+    z-index: -1;
+}
+
 #buttonTop {
     opacity: .9; 
     transition: opacity 1s;
@@ -154,10 +185,9 @@ backgroumd-image:hover{
     display: none;
     position:fixed;
     top: 95%;
-    height: 40px; 
+    height: 200px; 
     width: 156px; 
     text-align: center; 
-    font-size: 30px;
     
    
     
