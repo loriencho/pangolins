@@ -40,6 +40,7 @@ p {
 }
 
 body {
+    cursor: default;
     overflow-x:hidden;
     min-width: 100%;
     min-height:100%;
@@ -94,7 +95,7 @@ head {
     position: relative;
     display:grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(40, 100px);
+    grid-template-rows: repeat(38, 100px);
 
 }
 
@@ -111,7 +112,7 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 19%; 
+    max-height: 20%; 
     max-width: 100%;
   
 
@@ -125,8 +126,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 19%; 
-    top: 25%; 
+    max-height: 20%; 
+    top: 26%; 
     max-width: 100%;
   
 
@@ -139,8 +140,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 19%; 
-    top: 50%; 
+    max-height: 20%; 
+    top: 52%; 
     max-width: 100%;
 }
 
@@ -151,8 +152,8 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 19%; 
-    top: 75%; 
+    max-height: 20%; 
+    top: 78%; 
     max-width: 100%;
 }
 
@@ -162,7 +163,7 @@ head {
     background-attachment: fixed; 
     background-size: cover;
     background-repeat: no-repeat ;
-    max-height: 19%; 
+    max-height: 20%; 
     top: 100%; 
     max-width: 100%;
      position: absolute;
@@ -172,23 +173,50 @@ head {
 #buttonTop {
     opacity: .9; 
     transition: opacity 1s;
-    transition: top .1s;
-    
-
     background-image: url("http://www.millenniumbulk.com/wp-content/uploads/revslider/world-map/white-triangle.png");
     cursor: pointer;
-    z-index:10;
     right: 1%; 
-    display: none;
     position:fixed;
     top: 95%;
-    height: 200px; 
-    width: 156px; 
-    text-align: center; 
-    
+    height: 35px; 
+    width: 50px; 
+    background-size: cover;
    
     
 }
+
+
+#buttonQuestion {
+    right: 96%;
+    opacity: .6;
+    position: fixed;
+    transition: opacity 1s;
+    top: 94%;
+    background-image: url("https://github.com/loriencho/pangolins/blob/master/questionmarkicon.png?raw=true");
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+   
+}
+#buttonQuestion:hover{
+    opacity: .8;
+    
+}
+
+#info {
+    background-color: black;
+    position: fixed; 
+    z-index: 18;
+    top: 88%;
+    left: -10vw;
+    font-size: 12px;
+    height:10vh;
+    width: 13vw;
+    border-radius: 13px;
+    text-align: center;
+    transition: left 1s; 
+}
+
  html {
     scroll-behavior: smooth; 
 }

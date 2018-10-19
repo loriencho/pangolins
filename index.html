@@ -14,7 +14,7 @@
         <button id="a" onclick = "scrollAbout()"> ABOUT </button>
         <button id= "b" onclick="scrollPoaching()"> POACHING</button>
         <button id= "c" onclick="scrollBehavior()"> BEHAVIOR</button>
-        <button id= "d"> DIET</button>
+        <button id= "d" onclick="scrollDiet()"> DIET</button>
 
         </div>
     
@@ -220,7 +220,13 @@
             document.body.scrollTop = 3400;
             document.documentElement.scrollTop = 3400;
         }
+    function showInfo(){
+        document.getElementById("info").style.left = "5%";
+    }
           
+    function hideInfo() {
+        document.getElementById("info").style.left="-25vw";
+    }
             
           
 
@@ -282,10 +288,13 @@
     
     
     <div id = "buttonTop" title = "Back to top" onclick = "toTop()"> </div>
+    <div id = "buttonQuestion" title = "Info" onmouseover="showInfo()" onmouseout ="hideInfo()" > </div>
 
     </body>
 
     <footer>
+    <div id= "info"> <p> Site created by Lorien Cho. Images are used according to the Fair Use doctrine with educational and nonprofit purposes. </p> </div>
+
     </footer>
 
 
