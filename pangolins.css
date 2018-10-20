@@ -205,17 +205,19 @@ head {
 
 #info {
     background-color: black;
-    opacity: .6;
+    opacity: 0;
     position: fixed; 
-    z-index: 18;
+    z-index: -1;
     top: 88%;
     left: -10vw;
     font-size: 12px;
-    height:10vh;
     width: 13vw;
+    left : -13w;
     border-radius: 13px;
     text-align: center;
     transition: left 1s; 
+    transition: opacity 1s; 
+
 }
 
  html {
