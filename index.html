@@ -75,7 +75,7 @@
 
             if (800 < bScrollTop || 800 < deScrollTop) {
                 
-                if (  deScrollTop > 1600 || bScrollTop> 1600) {    
+                if (  deScrollTop > 1400 || bScrollTop> 1400) {    
                     bgimg2.style.opacity = ".6";
                     about.style.opacity = "0" ;
                     
@@ -154,29 +154,21 @@
                 bgimg4.style.transition = "opacity .8s";
 
             if (3200 < bScrollTop || 3200 < deScrollTop) {
-                if (  deScrollTop > 3700 || bScrollTop> 3700) {   
-
-                    bgimg4.style.opacity = ".6";
-                    behavior.style.opacity = "0" ;
+            
+                    bgimg4.style.opacity = ".5";
+                    behavior.style.opacity = ".8" ;
                     
     
             }
                 else {
-                        behavior.style.opacity =".8" ; 
-                        bgimg4.style.opacity = ".5";
+                        behavior.style.opacity ="0" ; 
+                        bgimg4.style.opacity = ".6";
 
 
 
                 }
             }
-                else {
-                    bgimg4.style.opacity = ".6";
-
-                    behavior.style.opacity ="0" ; 
-
-
-                }    
-   }
+   
         function scrollBehavior(){
             document.body.scrollTop = 3400;
             document.documentElement.scrollTop = 3400;
@@ -223,12 +215,17 @@
     function showInfo(){
         document.getElementById("info").style.opacity = ".4";
 
+
         document.getElementById("info").style.left = "5%";
+        
+
 
     }
           
     function hideInfo() {
+
         document.getElementById("info").style.left="-25vw";
+
     }
         
           

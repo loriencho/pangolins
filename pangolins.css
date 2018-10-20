@@ -57,6 +57,7 @@ body {
 }
 
 .menu button {
+
     transition: letter-spacing .1s; 
     outline: none;
     display: inline-block; 
@@ -171,7 +172,7 @@ head {
 }
 
 #buttonTop {
-    opacity: .9; 
+    opacity: .5; 
     transition: opacity 1s;
     background-image: url("http://www.millenniumbulk.com/wp-content/uploads/revslider/world-map/white-triangle.png");
     cursor: pointer;
@@ -183,6 +184,9 @@ head {
     background-size: cover;
    
     
+}
+#buttonTop:hover {
+    opacity: .7;
 }
 
 
@@ -207,6 +211,7 @@ head {
     background-color: black;
     opacity: 0;
     position: fixed; 
+
     z-index: -1;
     top: 88%;
     left: -10vw;
@@ -216,7 +221,6 @@ head {
     border-radius: 13px;
     text-align: center;
     transition: left 1s; 
-    transition: opacity 1s; 
 
 }
 
