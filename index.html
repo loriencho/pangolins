@@ -153,34 +153,35 @@
                 behavior.style.transition ="opacity .5s" ;
                 bgimg4.style.transition = "opacity .8s";
 
-         if (4000 < bScrollTop || 4000 < deScrollTop) {
-                if (  deScrollTop > 4500 || bScrollTop> 4500) {   
+         if (2800 < bScrollTop || 2800 < deScrollTop) {
+             console.log("orange");
+                if (  deScrollTop > 3200 || bScrollTop> 3200) {   
 
-                    bgimg5.style.opacity = ".6";
-                    diet.style.opacity = "0" ;
+                    bgimg4.style.opacity = ".6";
+                    behavior.style.opacity = "0" ;
                     
     
             }
                 else {
-                        diet.style.opacity =".8" ; 
-                        bgimg5.style.opacity = ".5";
+                        behavior.style.opacity =".8" ; 
+                        bgimg4.style.opacity = ".5";
 
 
 
                 }
             }
                 else {
-                    bgimg5.style.opacity = ".6";
+                    bgimg4.style.opacity = ".6";
 
-                    diet.style.opacity ="0" ; 
+                    behavior.style.opacity ="0" ; 
 
 
                 } 
    }
    
         function scrollBehavior(){
-            document.body.scrollTop = 3400;
-            document.documentElement.scrollTop = 3400;
+            document.body.scrollTop = 3200;
+            document.documentElement.scrollTop = 3200;
         }
         
   function fadeDiet () {
@@ -218,11 +219,11 @@
                 }    
    }
         function scrollDiet(){
-            document.body.scrollTop = 3400;
-            document.documentElement.scrollTop = 3400;
+            document.body.scrollTop = 4500;
+            document.documentElement.scrollTop = 4500;
         }
     function showInfo(){
-        document.getElementById("info").style.opacity = ".4";
+        document.getElementById("info").style.opacity = ".6";
 
 
         document.getElementById("info").style.left = "5%";
